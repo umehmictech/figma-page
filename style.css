@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: brown;
+    width: 100%;
+    height: 100px;
+}
+nav{
+    background-color: rgb(89, 87, 87);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+    align-items: center;
+    
+}
+.hamburger{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 0;
+}
+.hamburger span{
+   display: inline-block;
+   width: 90%;
+   height: 5px;
+   background-color: white; 
+   border-radius: 10px;
+   margin-left: 400px;
+   cursor: pointer;
+}
+.title{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 700px;
+}
+main{
+    height: 100vh;
+    width: 100%;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(21, 21, 222);
+    height: 60%;
+    margin-top: 200px;
+    }
+
+
+.style i{
+    color: white;
+    justify-content: center;
+}
+.form input{
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(21, 21, 222);
+    font-size: 1rem;
+    border: 1px solid white; 
+    cursor: pointer;
+}
+
+.login{
+    display: inline-block;
+    background-color: white;
+    width: 30%;
+    height: 40px;
+    padding:5px;
+    cursor: pointer;
+}
+.login h1{
+    color: rgb(21, 21, 222);
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.forget h2{
+    color: white;
+    padding: 20px;
+    right: 200px;
+    cursor: pointer;
+}
+@media screen and (max-width: 1471px) {
+    header nav{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column; 
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      /* flex-wrap: nowrap; */
+      }
+    }
+    @media screen and (max-width: 1177px) {
+        header nav{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /* flex-wrap: nowrap; */
+            }
+            .hamburger{
+                height: 100px;
+            }
+    }
